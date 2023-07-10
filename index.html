@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <!-- Style -->
+    <link rel="stylesheet" href="CAPTCHA-Validator-main\CAPTCHA-Validator-main\styles.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <title>Survey From</title>
+    <!-- SEO -->
+    <meta name="title" content="Survey Form | Latihan Html & CSS"/>
+	<meta name="facebook-domain-verification"/>
+		
+	<meta name="keywords" content="form, Survey form, form, html, css, javascript, table, tabel, latihan"/>
+	<meta name="description" content="Survey Form ini berisi data dummies yang bertujuan untuk latihan html dan CSS"/>
+	<meta name="date" content="2023-07-08"/>
+	<meta name="sitecode" content="id"/>
+</head>
+<body>
+    <div class="heading">
+        <h1 id="head">Survey Form</h1>
+        <h2 id="sub-heading">Yuk Isi Form Berikut ini.</h2>
+    </div>
+    <form>
+        <div id="content1">
+            <label for="name">Nama :</label><br><br>
+            <input type="text" name="Nama" id="name" placeholder="Enter Your name" class="box"> <br><br>
+            <label for="email">Email :</label><br><br>
+            <input type="email" name="Nama" id="email" placeholder="Enter Your Email" class="box"> <br><br>
+            <label for="age">Age :</label><br><br>
+            <input type="age" name="age" id="age" placeholder="Enter Your Age" class="box"> <br><br>
+            <label for="role">Select Your Role : </label><br><br>
+        
+        <div id="option1">
+            <select name="role" id="role">
+                <option name="Select Your Role">Select Your Role</option>
+                <option value="student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Freelancer">Freelancer</option>
+                <option value="Prefer not to Say">Prefer not to Say</option>
+                <option value="Other">Other</option>
+
+            </select>
+        </div>
+        <br>
+        <br>
+        <label id="head1">Minat Kamu :</label><br><br>
+        <input type="radio" name="radio" class="larger" id="Definitely"><label for="Definitely">&nbsp&nbsp&nbspFront-End Developer</label><br><br>
+        <input type="radio" name="radio" class="larger" id="Maybe"><label for="Maybe">&nbsp&nbsp&nbspBack-End Developer</label><br><br>
+        <input type="radio" name="radio" class="larger" id="Not"><label for="Not">&nbsp&nbsp&nbspSoftware Developer</label><br><br><br><br>
+        <label>Perangkat apa yang kamu pakai Untuk Ngoding?</label><br>
+        <div id="option2">
+            <select>
+                <option name="Select an option">Select an option</option>
+                <option value="Dekstop">Dekstop</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Handphone">Handphone</option>
+                <option value="Tidak ingin memberi tahu">Tidak ingin memberi tahu</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div class="center">
+            <h1 id="captchaHeading">Please Validate This Captcha</h1>
+            <br>
+            <div id="captchaBackground">
+                <canvas id="captcha">captcha text</canvas>
+                <input id="textBox" type="text" name="text">
+                <div id="buttons">
+                    <input id="submitButton" type="submit">
+                    <button id="refreshButton" type="submit">Refresh</button>
+                </div>
+                <span id="output"></span>
+            </div>
+        </div>
+        <script src="CAPTCHA-Validator-main\CAPTCHA-Validator-main\script.js"></script>
+        </div>
+    </form>
+</body>
+</html>
